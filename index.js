@@ -84,6 +84,9 @@ io.on('connection', (socket) => {
 app.get('/', (req, res) => {
   res.send('Backend is Running...');
 });
+app.get('/test', (req, res) => {
+  res.send('Backend is Running...');
+});
 
 // middleware
 app.use(cors());
