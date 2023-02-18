@@ -15,19 +15,19 @@ const messageRoute = require('./src/routes/messages');
 env.config();
 
 // mongodb connection
-mongoose.connect(
-  process.env.MONGODB_CONNECTION_STRING,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  },
-  (err) => {
-    if (err) throw err;
-    console.log('MongoDB connection is established');
-  }
-);
+// mongoose.connect(
+//   process.env.MONGODB_CONNECTION_STRING,
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false,
+//   },
+//   (err) => {
+//     if (err) throw err;
+//     console.log('MongoDB connection is established');
+//   }
+// );
 
 // code for socket start
 const io = require('socket.io')(8900, {
