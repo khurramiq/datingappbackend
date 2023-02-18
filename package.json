@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is backend",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node ./src/index.js"
   },
